@@ -21,11 +21,23 @@ namespace OGRenderer {
 
     void Application::Run() {
 
+
+        float r = 0;
+
+        float rn;
         while (m_Window->CloseWindow())
         {
+            r += 0.2;
+
+            if (r > 255) {
+                r = 0;
+            }
+
+            rn = (float) r / 255;
+
             m_Window->ProcessInput();
 
-            glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+            glClearColor(rn, 0.3f, 0.3f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
 
             m_Window->OnUpdate();

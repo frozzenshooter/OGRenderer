@@ -1,3 +1,6 @@
 [submodule "OGRenderer/vendor/glfw"]
 	path = OGRenderer/vendor/glfw
 	url = https://github.com/frozzenshooter/glfw.git
+[submodule "OGRenderer/vendor/spdlog"]
+	path = OGRenderer/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
