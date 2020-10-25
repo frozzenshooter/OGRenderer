@@ -15,3 +15,6 @@ bin-int/
 **.vcxproj
 **.vcxproj.filters
 **.vcxproj.user
+
+# Subprojects
+OGRenderer/vendor/Glad/bin/*
