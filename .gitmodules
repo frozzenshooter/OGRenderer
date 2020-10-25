@@ -1,0 +1,3 @@
+[submodule "OGRenderer/vendor/glfw"]
+	path = OGRenderer/vendor/glfw
+	url = https://github.com/frozzenshooter/glfw.git
