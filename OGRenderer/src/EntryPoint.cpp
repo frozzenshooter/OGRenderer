@@ -1,7 +1,11 @@
-#include <iostream>
+#include "Core/Application.h"
 
 int main() {
 
-    std::cout << "Hello world" << std::endl;
+    auto app = OGRenderer::Application::GetInstance();
+    app.StartUp();
+    app.Run();
+    app.Shutdown();
 
+    return 0;
 }

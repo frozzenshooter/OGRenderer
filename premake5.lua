@@ -11,8 +11,8 @@ workspace "OGRenderer"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
-IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
-IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
+IncludeDir["GLFW"] = "OGRenderer/vendor/GLFW/include"
+IncludeDir["Glad"] = "OGRenderer/vendor/Glad/include"
 
 group "Dependencies"
     include "OGRenderer/vendor/GLFW"
