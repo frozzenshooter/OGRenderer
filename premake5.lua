@@ -11,10 +11,12 @@ workspace "OGRenderer"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
-IncludeDir["glfw"] = "OGRenderer/vendor/glfw/include"
+IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
+IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
 
 group "Dependencies"
-	include "OGRenderer/vendor/glfw"
+    include "OGRenderer/vendor/GLFW"
+    include "OGRenderer/vendor/Glad"
 
 group ""
 
@@ -37,12 +39,15 @@ project "OGRenderer"
     includedirs
     {
         "%{prj.name}/src",
-        "%{IncludeDir.glfw}",
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
 
     links
     {
-        "glfw"
+        "GLFW",
+        "Glad",
+        "opengl32.lib"
     }
 
     
