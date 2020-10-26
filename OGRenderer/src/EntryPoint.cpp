@@ -1,5 +1,5 @@
 #include "Core/Application.h"
-#include "Core/Logger.h"
+#include "Log/Logger.h"
 
 int main() {
 

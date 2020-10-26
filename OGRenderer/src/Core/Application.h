@@ -1,7 +1,7 @@
 #pragma once
 #include <Core\Window.h>
 #include <memory>
-#include "Logger.h"
+#include "Log/Logger.h"
 
 namespace OGRenderer{
 
