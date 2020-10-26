@@ -1,6 +1,6 @@
 #pragma once
-#include <Core\Window.h>
 #include <memory>
+#include "Core/Window.h"
 #include "Log/Logger.h"
 
 namespace OGRenderer{
